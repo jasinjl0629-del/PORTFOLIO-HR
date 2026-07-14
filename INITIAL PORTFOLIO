@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    background:#f4f7fb;
+    color:#222;
+}
+
+header{
+    background:linear-gradient(135deg,#0f172a,#2563eb);
+    color:#fff;
+    padding:20px 10%;
+    min-height:100vh;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav h2{
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    margin-top:60px;
+}
+
+.hero img{
+    width:190px;
+    height:190px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid white;
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+.hero h1{
+    font-size:55px;
+    margin-top:20px;
+}
+
+.hero h3{
+    margin:10px 0;
+    font-weight:400;
+    color:#dbeafe;
+}
+
+.hero p{
+    max-width:700px;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:white;
+    color:#2563eb;
+    padding:14px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#2563eb;
+    color:white;
+    transform:translateY(-4px);
+}
+
+section{
+    width:90%;
+    max-width:1100px;
+    margin:60px auto;
+}
+
+section h2{
+    text-align:center;
+    font-size:36px;
+    color:#2563eb;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 40px rgba(37,99,235,.25);
+}
+
+section p,
+section li{
+    font-size:18px;
+    line-height:1.8;
+}
+
+ul{
+    padding-left:20px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:20px;
+flex-direction:column;
+text-align:center;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.hero img{
+width:150px;
+height:150px;
+}
+
+section h2{
+font-size:28px;
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #ffffff;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+    margin-bottom:25px;
+    transition:0.4s;
+}
+
+.profile-img:hover{
+    transform:scale(1.05);
+}
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J.L. Jasin | HR Portfolio</title>
+
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+<nav>
+<h2>J.L. Jasin</h2>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#education">Education</a></li>
+<li><a href="#experience">Experience</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+
+</nav>
+
+<div class="hero">
+<img src="images/Profile.jpeg" alt="Profile Photo" class="Profile-img">
+
+<h1>J.L. Jasin</h1>
+
+<h3>MBA (HR) Fresher</h3>
+
+<p>Recruitment | HR Operations | Employee Engagement</p>
+
+<a href="resume.png" class="btn" target="_blank">View Resume</a>
+
+</div>
+
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>
+MBA (HR) graduate with knowledge in Recruitment, HR Operations,
+Employee Engagement, Payroll, Labour Laws and Odoo ERP.
+</p>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+
+<div class="cards">
+<div class="card">Recruitment</div>
+<div class="card">Talent Acquisition</div>
+<div class="card">HR Operations</div>
+<div class="card">Employee Engagement</div>
+<div class="card">Payroll</div>
+<div class="card">Labour Laws</div>
+<div class="card">MS Office</div>
+<div class="card">Odoo ERP</div>
+</div>
+
+</section>
+
+<section id="education">
+<h2>Education</h2>
+
+<h3>MBA - Human Resource Management</h3>
+<p>Nesamony Memorial Christian College, Marthandam (2024–2026)</p>
+
+<h3>B.Com</h3>
+<p>Noorul Islam College Arts and Science College, Kumaracoil (2020–2023)</p>
+
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+
+<h3>Warehouse Assistant  (September 2023 to March 2024)</h3>
+<p>ARVM Baby Products Pvt Ltd</p>
+
+<ul>
+<li>Inventory Management</li>
+<li>Documentation</li>
+<li>Warehouse Operations</li>
+</ul>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+
+<p>📞 8925361312</p>
+<p>📧 jasintoby@gmail.com</p>
+<p>📍 Kanyakumari, Tamil Nadu</p>
+<p><a href="https://www.linkedin.com/in/jasinhr" target="_blank">LinkedIn Profile</a></p>
+
+</section>
+
+<footer>
+<p>© 2026 J.L. Jasin | HR Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+// Smooth scrolling
+document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+// Fade animation
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.style.opacity="1";
+            entry.target.style.transform="translateY(0)";
+        }
+    });
+},{
+    threshold:0.2
+});
+
+sections.forEach(section=>{
+    section.style.opacity="0";
+    section.style.transform="translateY(50px)";
+    section.style.transition="all 0.8s ease";
+    observer.observe(section);
+});
+
+// Card animation
+document.querySelectorAll(".card").forEach(card=>{
+    card.addEventListener("mouseenter",()=>{
+        card.style.transform="translateY(-10px) scale(1.05)";
+    });
+
+    card.addEventListener("mouseleave",()=>{
+        card.style.transform="translateY(0) scale(1)";
+    });
+});
+
+// Typing Effect
+const text = "MBA (HR) | Talent Acquisition | HR Operations";
+const typing = document.querySelector(".hero h3");
+
+if (typing) {
+    typing.textContent = "";
+    let i = 0;
+
+    function type() {
+        if (i < text.length) {
+            typing.textContent += text.charAt(i);
+            i++;
+            setTimeout(type, 60);
+        }
+    }
+
+    type();
+}
+
+// Scroll to Top Button
+const btn = document.createElement("button");
+btn.innerHTML = "↑";
+btn.style.position = "fixed";
+btn.style.bottom = "20px";
+btn.style.right = "20px";
+btn.style.width = "45px";
+btn.style.height = "45px";
+btn.style.border = "none";
+btn.style.borderRadius = "50%";
+btn.style.background = "#2563eb";
+btn.style.color = "#fff";
+btn.style.fontSize = "20px";
+btn.style.cursor = "pointer";
+btn.style.display = "none";
+btn.style.boxShadow = "0 5px 15px rgba(0,0,0,0.3)";
+document.body.appendChild(btn);
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+});
+
+btn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
+
+// Footer Year
+const footer = document.querySelector("footer p");
+
+if (footer) {
+    footer.innerHTML = `© ${new Date().getFullYear()} J.L. Jasin | HR Portfolio`;
+}
