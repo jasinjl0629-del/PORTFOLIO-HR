@@ -9,15 +9,54 @@
 
 body{
     font-family:'Outfit',sans-serif;
-    background:#f4f7fb;
-    color:#222;
+    background: linear-gradient(-45deg,#020024,#0b1d51,#1e3a8a,#4facfe);
+    background-size:400% 400%;
+    animation:sky 15s ease infinite;
+    color:white;
+    overflow-x:hidden;
 }
 
-header{
-    background:linear-gradient(135deg,#0f172a,#2563eb);
-    color:#fff;
-    padding:20px 10%;
-    min-height:100vh;
+@keyframes sky{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Stars */
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+    radial-gradient(2px 2px at 20px 30px,#fff,transparent),
+    radial-gradient(2px 2px at 120px 90px,#fff,transparent),
+    radial-gradient(1.5px 1.5px at 250px 180px,#fff,transparent),
+    radial-gradient(2px 2px at 400px 70px,#fff,transparent),
+    radial-gradient(2px 2px at 650px 200px,#fff,transparent);
+    background-size:700px 400px;
+    animation:stars 40s linear infinite;
+    opacity:.8;
+    z-index:-2;
+}
+
+@keyframes stars{
+    from{transform:translateY(0);}
+    to{transform:translateY(-200px);}
+}
+
+/* Glass Cards */
+.card{
+    background:rgba(255,255,255,0.12);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.2);
+    color:white;
+    border-radius:20px;
+}
+
+/* Hero Image Glow */
+.profile-img{
+    border:5px solid white;
+    box-shadow:0 0 30px #60a5fa;
 }
 
 nav{
