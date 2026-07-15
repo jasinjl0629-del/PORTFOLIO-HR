@@ -159,16 +159,20 @@ section h2{
 
 .card{
     background:white;
+    color:#111827;
     padding:25px;
     border-radius:15px;
     text-align:center;
     box-shadow:0 10px 30px rgba(0,0,0,.08);
     transition:.3s;
 }
+}
 
-.card:hover{
-    transform:translateY(-10px);
-    box-shadow:0 20px 40px rgba(37,99,235,.25);
+.card h3,
+.card p,
+.card span,
+.card li{
+    color:#111827;
 }
 
 section p,
@@ -229,4 +233,8 @@ font-size:28px;
     transform:scale(1.05);
 }
 
+}
+.card,
+.card *{
+    color:#111827 !important;
 }
